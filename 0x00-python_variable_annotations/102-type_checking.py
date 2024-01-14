@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-'''zoom
+'''tuppel module.
 '''
-from typing import List, Tuple, TypeVar
+from typing import List, Tuple
 
-T = TypeVar('T')
 
-def zoom_array(lst: Tuple[T], factor: int = 2) -> List[T]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     '''Creates multiple copies of items in a tuple.
     '''
-    return list(lst) * factor
+    zoomed_in: List = [
+        item for item in lst
+        for i in range(int(factor))
+    ]
+    return zoomed_in
+
 
 array = (12, 72, 91)
 
