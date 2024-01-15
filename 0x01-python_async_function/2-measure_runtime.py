@@ -23,5 +23,5 @@ def measure_time(n: int, max_delay: int) -> float:
     end_ = time.time()
     duration_ = end_ - commence_
 
-    average_time = duration_ / n
-    return average_time
+    average_duration = duration_ / n
+    return average_duration
