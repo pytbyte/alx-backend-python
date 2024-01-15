@@ -7,11 +7,9 @@ import random
 
 async def wait_random(max_delay=10):
     """_asyncio_
-    asyncio library in Python to create
-    an asynchronous coroutine
-    Args:
-        max_delay (int, optional): _description_.
-        Defaults to 10.
+    Asynchronous coroutine that waits for a random delay.
+    :param max_delay: Maximum delay in seconds (default is 10).
+    :return: Random delay.
     """
     delay = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
