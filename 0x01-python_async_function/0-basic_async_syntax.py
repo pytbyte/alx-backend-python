@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-"""_Asyncio_
-"""
-
-
 import asyncio
 import random
+"""_Asyncio_
+"""
 
 
 async def wait_random(max_delay=10):
